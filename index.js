@@ -38,11 +38,11 @@ client.on('message', (msg) => {
   if(client.pollux.has(client.user.id) && msg.author.id === "578913818961248256" && msg.content.match(/(Type `pick` for a chance)/)) {
     msg.channel.send('pick')
     }
-
-  if(client.pokecord.has(client.user.id) && msg.author.id === "365975655608745985" && msg.embeds[0].description.match(/(Guess the pokémon and type)/)) {
+  if (msg.embeds && msg.author.id === '365975655608745985') {
+  if(client.pokecord.has(client.user.id) && msg.embeds[0].description.match(/(Guess the pokémon and type)/)) {
       msg.channel.send(`p!catch ` + pokemons[Math.floor(Math.random() * pokemons.length)].toLowerCase())
   }
-
+}
   if(msg.author.id !== client.user.id) return;
   if(msg.content.indexOf("?") !== 0) return;
   if (!client.commands.get(cmd)) return;
