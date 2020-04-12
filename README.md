@@ -23,7 +23,9 @@ Auto-Pick works perfectly fine (at least from what i've seen)
 Absolutely terrible, will only guess based on an array that I have. Because I was too lazy to actually make my own reverse-image-search api. But it will still guess at least.
 
 
-# Information
+# Information & Installation
 
 For any errors or if any bot owners fix their bot let me know so that I can update the selfbot.
+
+Download the repo as a zip file, extract it to desktop, open cmd and use cd path/to/folder, npm install & then it should be working. Keep in mind that discord.js@11.5.1 needs to be installed, latest version won't work.
 
