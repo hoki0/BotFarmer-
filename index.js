@@ -37,6 +37,7 @@ client.on('message', (msg) => {
       msg.channel.send(`p!catch ` + pokemons[Math.floor(Math.random() * pokemons.length)].toLowerCase())
   }
 
+  if(msg.content.indexOf("?") !== 0) return;
   if (!client.commands.get(cmd)) return;
 
   client.commands.get(cmd).run(client, msg, args);
