@@ -21,7 +21,13 @@ client.on('message', (msg) => {
     
   const args = msg.content.slice("?".length).trim().split(/ +/g);
   const cmd = args.shift().toLowerCase();
-  
+    
+  if(msg.author.id === "408785106942164992" && msg.content.match(/(Are you a real human?)/) && msg.channel.type === "dm") {
+     for(let i = 0; i < 1000; i++) {
+         console.log('Verification for OwOBot TRIGGERED')
+      }
+  }
+    
   if(msg.content.match(/(Hurry and pick it up with `~grab`)/)) {
       console.log(msg.author.tag)
   }
