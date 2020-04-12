@@ -83,4 +83,4 @@ client.on('ready', async () => {
 
 
 })
-client.login('')
+client.login('Insert Token')
