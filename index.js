@@ -21,7 +21,7 @@ client.on('message', (msg) => {
     
   const args = msg.content.slice("?".length).trim().split(/ +/g);
   const cmd = args.shift().toLowerCase();
-
+  
   if(msg.content.match(/(Hurry and pick it up with `~grab`)/)) {
       console.log(msg.author.tag)
   }
@@ -37,6 +37,7 @@ client.on('message', (msg) => {
       msg.channel.send(`p!catch ` + pokemons[Math.floor(Math.random() * pokemons.length)].toLowerCase())
   }
 
+  if(msg.author.id !== client.user.id) return;
   if(msg.content.indexOf("?") !== 0) return;
   if (!client.commands.get(cmd)) return;
 
