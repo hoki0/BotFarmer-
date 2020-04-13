@@ -11,6 +11,7 @@ exports.run = async (client, msg, args) => {
 
     msg.channel.send('Started farming with the `dankmemer` in ' + msg.channel)
 
+    client.dankmemer.set(client.user.id, true)
 
     intervals(msg)
     trivia(msg, client)
