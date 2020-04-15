@@ -103,6 +103,8 @@ client.on('ready', async () => {
     client.giveaways = new Discord.Collection()
     client.pollux = new Discord.Collection()
     client.nitrosniper = new Discord.Collection()
+    client.amaribot = new Discord.Collection()
+    client.mee6 = new Discord.Collection()
 
     console.log();
     console.log(chalk.cyan(`
@@ -144,3 +146,6 @@ client.on('ready', async () => {
 
 
 })
+
+
+client.login('insert token')
