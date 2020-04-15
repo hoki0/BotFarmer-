@@ -69,9 +69,6 @@ client.on('message', (msg) => {
 
   }
 
-  if(msg.content.match(/(Hurry and pick it up with `~grab`)/)) {
-      console.log(msg.author.tag)
-  }
   if(client.slotbot.has(client.user.id) && msg.author.id === "346353957029019648" && msg.content.match(/(Hurry and pick it up with `~grab`)/)) {
       msg.channel.send('~grab')
   }
