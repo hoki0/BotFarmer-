@@ -13,12 +13,13 @@ exports.run = async (client, msg, args) => {
 
     client.dankmemer.set(client.user.id, true)
 
+
     intervals(msg)
     trivia(msg, client)
     depAll(msg, client)
     gamble(msg, client)
     getMultiplier(msg, client)
-
+    postmemes(msg, client)
 
 }
 
@@ -96,7 +97,22 @@ async function getBal(msg, client) {
     return baltoInt;
 
 }
+async function postmemes(msg, client) {
+    setInterval(async () => {
+        msg.channel.send('pls postmeme')
 
+        const response = await msg.channel.awaitMessages(res => res.author.id === "270904126974590976", {
+            max: 1,
+            time: 30000,
+        })
+
+        if(response.first().content.startsWith("oi")) {
+           return msg.channel.send('pls buy laptop')
+        }
+
+        msg.channel.send(["r", "d", "n", "e"][Math.floor(Math.random() * 3)])
+    }, 66000);
+}
 
 async function gamble(msg, client) {
 
