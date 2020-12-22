@@ -112,7 +112,7 @@ client.on('ready', async () => {
     ██████╦╝╚█████╔╝   ██║     ██║     ██║  ██║██║  ██║██║ ╚═╝ ██║███████╗██║  ██║
     ╚═════╝  ╚════╝    ╚═╝     ╚═╝     ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝     ╚═╝╚══════╝╚═╝  ╚═╝ `))
 
-    console.log(chalk.red("                                                     Created By intelligence#5555 "))
+    console.log(chalk.red("                                                     Created By ! rahh#0669 "))
     console.log();
     console.log();
     console.log(chalk.rgb(255,20,147)(`
