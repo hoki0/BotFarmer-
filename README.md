@@ -1,4 +1,4 @@
-<img src="https://i.gyazo.com/5fc2e98745730e6b30cb8bcf70410b65.png">
+<img src="https://media.discordapp.net/attachments/768460180953235506/790904032511787018/unknown.png">
 
 
 # Information & Installation
